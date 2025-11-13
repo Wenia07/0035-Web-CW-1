@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brands | BotHub</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      text-decoration: none;
+      transition: 0.3s ease;
+      width: 600px;
+      max-width: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 40%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      width: 60%;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #222831;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* ===== Mobile Layout ===== */
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+      }
+
+      .card-content {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+    <img src="gallery/logo.jpg" alt="Logo">
+    <h2>BotHub</h2>
+    <nav>
+      <a href="Mainpage.html">Home</a>
+      <a href="bottletypes.html">Bottle Types</a>
+      <a href="brands.html">Bottle Brands</a>
+      <a href="ourmission.html">Our Mission</a>
+      <a href="industry.html">Industry Insights</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+    <a class="signup-btn" href="register.html">Register</a>
+  </header>
+  <div class="cards-container">
+    <a href="brands/Tupperware.html" class="card">
+      <img src="https://logos-marcas.com/wp-content/uploads/2022/03/Tupperware-Emblema.jpg" alt="Tupperware">
+      <div class="card-content">
+        <div class="card-title">Tupperware</div>
+        <div class="card-desc">Tupperware offers reusable, durable bottles and containers designed to minimize plastic waste and promote sustainability.</div>
+      </div>
+    </a>
+
+    <a href="brands/Eplas.html" class="card">
+      <img src="https://shariahlife.sgp1.digitaloceanspaces.com/IPO/Eplas_logo.png" alt="Eplas">
+      <div class="card-content">
+        <div class="card-title">Eplas</div>
+        <div class="card-desc">Eplas is a Malaysian brand known for affordable, BPA-free water bottles and containers suited for everyday lifestyles.</div>
+      </div>
+    </a>
+
+    <a href="brands/MontiGO.html" class="card">
+      <img src="https://cdn.bitrefill.com/primg/w360h216/montigo-malaysia.webp" alt="MontiGO">
+      <div class="card-content">
+        <div class="card-title">MontiGO</div>
+        <div class="card-desc">Montigo designs premium insulated drinkware that keeps beverages hot or cold for hours with modern aesthetics.</div>
+      </div>
+    </a>
+
+    <a href="brands/Nike.html" class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Rewrite_Nike_Logo_Design_History_Evolution_0_1024x1024.jpg?v=1695304464" alt="Nike">
+      <div class="card-content">
+        <div class="card-title">Nike</div>
+        <div class="card-desc">Nike offers reusable water bottles and hydration gear designed for athletes with durability and eco-friendly materials.</div>
+      </div>
+    </a>
+
+    <a href="brands/CamelBak.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.YsmhkFNK5vOPLCSTlujS6AHaHa?pid=ImgDetMain" alt="CamelBak">
+      <div class="card-content">
+        <div class="card-title">CamelBak</div>
+        <div class="card-desc">CamelBak creates durable water bottles and hydration packs for eco-friendly, on-the-go convenience.</div>
+      </div>
+    </a>
+
+    <a href="brands/Thermos.html" class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.JhTEKuBT_MjQeh2T4BDHnQHaHa?pid=ImgDetMain" alt="Thermos">
+      <div class="card-content">
+        <div class="card-title">Thermos</div>
+        <div class="card-desc">Thermos produces insulated bottles that keep drinks hot or cold for hours with practical, eco-friendly design.</div>
+      </div>
+    </a>
+
+    <a href="brands/Klean Kanteen.html" class="card">
+      <img src="https://www.frankwater.com/app/uploads/2022/02/KK.png" alt="Klean Kanteen">
+      <div class="card-content">
+        <div class="card-title">Klean Kanteen</div>
+        <div class="card-desc">Klean Kanteen makes stainless steel reusable bottles that are durable, eco-friendly, and healthy for daily hydration.</div>
+      </div>
+    </a>
+
+    <a href="brands/Hydroflask.html" class="card">
+      <img src="https://static.wixstatic.com/media/601486_6b9d7f75651d4dfba0e26e26d178c86a~mv2.jpeg/v1/fill/w_1200,h_630,al_c/601486_6b9d7f75651d4dfba0e26e26d178c86a~mv2.jpeg" alt="HydroFlask">
+      <div class="card-content">
+        <div class="card-title">HydroFlask</div>
+        <div class="card-desc">Hydro Flask creates insulated stainless steel bottles ideal for maintaining drink temperature during active lifestyles.</div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

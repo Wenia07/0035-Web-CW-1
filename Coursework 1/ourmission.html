@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Mission | BotHub</title>
+<style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+
+  .video-section {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .quote-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    z-index: 2;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  }
+
+  .video-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+  }
+
+  .content {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: black;
+  }
+
+  .content h1 {
+    color: black;
+    font-weight: bold;
+  }
+
+  .content p, .content ul {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    color: gray;
+  }
+
+  .content li {
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <img src="gallery/logo.jpg" width="50" height="50">
+  <h2>BotHub</h2>
+  <nav>
+    <a href="Mainpage.html">Home</a>
+    <a href="bottletypes.html">Bottle Types</a>
+    <a href="brands.html">Bottle Brands</a>
+    <a href="ourmission.html">Our Mission</a>
+    <a href="industry.html">Industry Insights</a>
+    <a href="ContactUs.html">Contact Us</a>
+  </nav>
+  <a class="signup-btn" href="register.html">Register</a>
+</header>
+
+<div class="video-section">
+  <video autoplay muted loop playsinline>
+    <source src="gallery/bckground of mainpage.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="quote-text">
+    <p>"Small habits. Big impact. One bottle can change the world."</p>
+    <p>- BotHub</p>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Our Mission</h1>
+  <p>At BotHub, our vision is bold: we imagine a world where single-use plastic bottles have become relics of the past—where every individual, community, and workplace relies on sustainable, reusable hydration solutions. We believe the path to that future begins today, by empowering people to make smarter choices—selecting durable, eco-friendly bottles and moving away from disposable plastics that contribute to pollution and waste.</p>
+
+  <p>Our mission is clear and actionable. We commit to providing a comprehensive platform that educates, inspires, and guides. On one hand, we showcase a full spectrum of bottle types—from sports bottles to insulated vessels—highlighting brands and materials so visitors can choose what fits their lifestyle. On the other hand, we champion the reduction of single-use plastic by promoting awareness, supporting sustainable brands, and advocating for reuse over disposal.</p>
+
+  <ul>
+    <li>Educate thousands of visitors each year about reusable bottle options and the environmental cost of single-use plastics.</li>
+    <li>Partner with brands that align with sustainable manufacturing, ethical materials, and circular-economy practices.</li>
+    <li>Reduce millions of single-use plastic bottles from entering landfills and oceans by encouraging reuse.</li>
+    <li>Build an engaged community of sustainability-conscious users who share their stories and inspire others.</li>
+  </ul>
+
+  <p>We understand that changing the world’s relationship with plastic bottles isn’t just about alternatives—it’s about shifting mindsets. At BotHub, we believe that every bottle used again makes a difference—not just for one person, but for our planet. Let’s make the sustainable choice the simple choice—one bottle at a time.</p>
+</div>
+</body>
+</html>

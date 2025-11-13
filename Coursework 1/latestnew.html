@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Events | BotHub</title>
+  <style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+
+
+    .tables-container {
+      width: 80%;
+      height: 50%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding: 30px 0;
+    }
+    .table {
+      background: white;
+      overflow: hidden;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      transform: 0.2s ease;
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: black;
+    } 
+    .table img {
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 15px auto;
+      padding: 10px;
+      background: white;
+    }
+    .table-title {
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="gallery/logo.jpg" width="50" height="50">
+    <h2>Bothub</h2>
+    <nav>
+      <a href="Mainpage.html">Home</a>
+      <a href="bottletypes.html">Bottle Types</a>
+      <a href="brands.html">Bottle Brands</a>
+      <a href="ourmission.html">Our Mission</a>
+      <a href="industry.html">Industry Insights</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+    <a class="signup-btn" href="signup.html">Register</a>
+  </header>
+  <h1>Past Events We Organized</h1>
+  <div class="tables-container">
+    <div class="table">
+      <img src="https://th.bing.com/th/id/OIP.ga99FP6zZKJITcP1cu92DwHaE8?w=236&h=180">
+      <div class="table-title">Clean Up: The Beach</div>
+    </div>
+    <div class="table">
+      <img src="https://th.bing.com/th/id/OIP.YH8YBNAZ76pHSP5uLUo7zwHaE8?w=241&h=180">
+      <div class="table-title">Clean Up 2.0: The Park</div>
+    </div>
+    <div class="table">
+      <img src="https://th.bing.com/th/id/OIP.R23KxqejMISRiKVgyb_1YQHaE8?w=265&h=180">
+      <div class="table-title">Save the Trees: Replant Them</div>
+    </div>
+    <div class="table">
+      <img src="https://th.bing.com/th/id/OIP.q_f1XouCpeLTwBjVi5-wKgHaE8?w=274&h=183">
+      <div class="table-title">Reuse Garage Sales</div>
+    </div>
+  </div>
+</body>
+</html>

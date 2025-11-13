@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottle Types | BotHub</title>
+  <style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+
+
+    /* ===== Picture Grid ===== */
+    .pic-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+
+    .pic-box {
+      position: relative;
+      flex: 1 1 250px;
+      max-width: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px gray;
+      transform: 0.3s ease;
+    }
+
+    .pic-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      transform: 0.3s ease;
+    }
+
+    .pic-box:hover img {
+      transform: scale(1.05);
+    }
+
+    .pic-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 0 0 6px black;
+      background: rgba(0,0,0,0.3);
+      padding: 8px 12px;
+      border-radius: 5px;
+      pointer-events: none;
+    }
+
+    @media (max-width: 500px) {
+      .photo-box {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="gallery/logo.jpg" alt="Logo">
+    <h2>BotHub</h2>
+    <nav>
+      <a href="Mainpage.html">Home</a>
+      <a href="bottletypes.html">Bottle Types</a>
+      <a href="brands.html">Bottle Brands</a>
+      <a href="ourmission.html">Our Mission</a>
+      <a href="industry.html">Industry Insights</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+    <a class="signup-btn" href="register.html">Register</a>
+  </header>
+
+  <div class="pic-container">
+    <a href="Bottles/sports.html">
+      <div class="pic-box">
+        <img src="gallery/1 pic colab.jpg" alt="Sports Bottle">
+        <div class="pic-text">Sports Bottle</div>
+      </div>
+    </a>
+
+    <a href="Bottles/normal.html">
+      <div class="pic-box">
+        <img src="gallery/1 pic colab 3.jpg" alt="Daily Hydration Flask">
+        <div class="pic-text">Daily Hydration Flask</div>
+      </div>
+    </a>
+
+    <a href="Bottles/thermos.html">
+      <div class="pic-box">
+        <img src="gallery/1 pic colab2.jpg" alt="Insulated Water Bottle">
+        <div class="pic-text">Insulated Water Bottle</div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

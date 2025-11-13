@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Tips | BotHub</title>
+<style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+    }
+
+  /* ===== Navigation Bar ===== */
+  nav {
+    flex-grow: 1;
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-weight: 500;
+    display: inline-block;
+  }
+
+  nav a:hover {
+    background-color: lightgray;
+    transform: 0.3s ease;
+  }
+
+  /* ===== Content Container ===== */
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 25px;
+  }
+
+  /* ===== Eco Tips Section ===== */
+  .tips {
+    display: flex;
+    text-align: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+    border-left: 5px solid blue;
+    padding-left: 15px;
+  }
+
+  .tips img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .tips h3 {
+    margin: 0 0 5px 0;
+    color: blue;
+  }
+
+  .tips p {
+    margin: 0;
+    color: dimgray;
+  }
+
+  /* ===== Footer Section ===== */
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: gray;
+    background-color: lightgray;
+    margin-top: 40px;
+  }
+
+  /* ===== Responsive Adjustments ===== */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    nav {
+      flex-basis: 100%;
+    }
+
+    .container {
+      margin: 30px 20px;
+      padding: 20px;
+    }
+
+    .tips {
+      flex-direction: column;
+      text-align: center;
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .tips img {
+      margin-bottom: 10px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <img src="gallery/logo.jpg" width="50" height="50">
+    <h2>BotHub</h2>
+    <nav>
+      <a href="Mainpage.html">Home</a>
+      <a href="brands.html">Bottle Types</a>
+      <a href="bottletypes.html">Bottle Brands</a>
+      <a href="ourmission.html">Our Mission</a>
+      <a href="industry.html">Industry Insights</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Simple Tips to Save the Planet</h1>
+    <p>At BotHub, our mission is to inspire change — starting with small actions that protect our planet. Here are a few easy ways you can help reduce plastic waste and live more sustainably.</p>
+
+    <div class="tips">
+      <img src="https://th.bing.com/th/id/OIP.QJQnL01Jdkc2SUFeDpQLwAHaHa?w=187&h=187" alt="Reusable Bottle">
+      <div>
+        <h3>1. Use Reusable Bottles</h3>
+        <p>Say goodbye to single-use plastic bottles! Switching to a reusable bottle helps cut down plastic pollution and saves you money in the long run.</p>
+      </div>
+    </div>
+
+    <div class="tips">
+      <img src="data:image/webp;base64,UklGRq4KAABXRUJQVlA4IKIKAABQPw..." alt="Refill Icon">
+      <div>
+        <h3>2. Refill Instead of Buying</h3>
+        <p>Refilling your bottle at refill stations or using filtered tap water keeps you hydrated while reducing waste.</p>
+      </div>
+    </div>
+
+    <div class="tips">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.igjjhpD_UZQDFRmPk9RyXgHaG1?w=800&h=738" alt="Recycle Icon">
+      <div>
+        <h3>3. Recycle and Reuse</h3>
+        <p>Always recycle bottles properly and reuse them creatively for storage or home projects instead of throwing them away.</p>
+      </div>
+    </div>
+
+    <div class="tips">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.nlYlfpLdbX3lUQ1NNdBKjQHaHa?w=500&h=500" alt="Eco Brand Icon">
+      <div>
+        <h3>4. Support Sustainable Brands</h3>
+        <p>Choose brands that focus on sustainability, like those promoted by BotHub, which offer eco-friendly materials and long-lasting designs.</p>
+      </div>
+    </div>
+
+    <div class="tips">
+      <img src="https://th.bing.com/th/id/OIP.7NS8d1_UWdH7aCz4dR91lgHaHa?w=500&h=500" alt="Education Icon">
+      <div>
+        <h3>5. Educate Others</h3>
+        <p>Share what you’ve learned with friends and family — every small step towards awareness makes a big difference for our planet.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 BotHub — Promoting reusable solutions for a cleaner future</footer>
+
+</body>
+</html>

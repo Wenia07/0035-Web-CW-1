@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industry Insights | BotHub</title>
+  <style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content h1 {
+      color: black;
+      font-weight: 700;
+    }
+
+    .content p {
+      color: black;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .tables-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 30px 0;
+    }
+
+    .table {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px gray;
+      transform: 0.2s ease;
+      text-align: center;
+    }
+
+    .table:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px gray;
+    }
+
+    .table img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .table-title {
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px;
+      color: black;
+    }
+
+    .table-desc {
+      text-align: left;
+      padding: 0 15px 15px;
+      font-size: 14px;
+      color: dimgray;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="gallery/logo.jpg" width="50" height="50" alt="Logo">
+    <h2>BotHub</h2>
+    <nav>
+      <a href="Mainpage.html">Home</a>
+      <a href="bottletypes.html">Bottle Types</a>
+      <a href="brands.html">Bottle Brands</a>
+      <a href="ourmission.html">Our Mission</a>
+      <a href="industry.html">Industry Insights</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+    <a class="signup-btn" href="register.html">Register</a>
+  </header>
+
+  <div class="content">
+    <h1>News</h1>
+    <p>Alongside mission-driven updates, we highlight unique and inspiring content related to bottles and the evolving packaging world.</p>
+  </div>
+
+  <div class="tables-container">
+    <div class="table">
+      <a href="https://www.packagingtechtoday.com/materials/sustainable/reusable-water-bottles-market-sustainable-growth-and-emerging-trends/">
+        <img src="https://www.packagingtechtoday.com/wp-content/uploads/2025/04/chart.jpg" alt="Reusable Water Bottles Market">
+        <div class="table-title">Reusable Water Bottles Market: Sustainable Growth and Emerging Trends</div>
+        <div class="table-desc">The global reusable water bottle market, driven by rising sustainability awareness and plastic-use regulations, is projected to grow significantly by 2034.</div>
+      </a>
+    </div>
+
+    <div class="table">
+      <a href="https://www.goodhousekeeping.com/home-products/g27312224/best-water-bottles/">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/bestwaterbottles-67ad03f4c205e.png?crop=1.00xw:1.00xh;0,0&resize=1800:*" alt="Best Water Bottles">
+        <div class="table-title">6 Best Water Bottles of 2025, Tested & Reviewed</div>
+        <div class="table-desc">Good Housekeeping’s lab found the best bottles for durability, ease of cleaning, leak-resistance, and insulation—helping consumers pick reliable reusable options.</div>
+      </a>
+    </div>
+
+    <div class="table">
+      <a href="https://www.earth.com/news/reusable-water-bottles-are-breeding-ground-for-strep-and-fecal-bacteria/">
+        <img src="https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2025%2F09%2F06081241%2Fwater-bottle_reusable_bacteria_1m-1400x850.jpg&w=1200&q=75" alt="Reusable Bottle Hygiene Study">
+        <div class="table-title">Reusable Bottles and Hygiene Risks</div>
+        <div class="table-desc">A study found that many reusable bottles can harbor bacteria if not cleaned properly, emphasizing the importance of hygiene in sustainable living.</div>
+      </a>
+    </div>
+
+    <div class="table">
+      <a href="https://www.goodhousekeeping.com/life/a68058383/stanley-take-back-program/">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/stanley-thermos-is-seen-in-ankara-turkiye-on-february-9-news-photo-1758918397.pjpeg?crop=1.00xw:1.00xh;0,0&resize=1800:*" alt="Stanley Take-Back Program">
+        <div class="table-title">Stanley’s Take-Back Program for Drinkware</div>
+        <div class="table-desc">Stanley allows customers to return old drinkware for recycling and receive discounts, reducing landfill waste and promoting reuse.</div>
+      </a>
+    </div>
+
+    <div class="table">
+      <a href="https://www.reuters.com/business/environment/eu-parliament-backs-clampdown-single-use-plastic-packaging-2024-04-24/">
+        <img src="https://www.reuters.com/resizer/v2/RM36F6BIJRMMXI3TOJXVK42HYE.jpg?auth=fd49d6a986d882bcb4fcd4ec1821bd3ee1ef79f88ce96ff5084a70f265aee89a&width=960&quality=80" alt="EU Plastic Ban">
+        <div class="table-title">EU Parliament Backs Ban on Single-Use Plastics</div>
+        <div class="table-desc">The EU approved legislation to ban many single-use plastics by 2030 and set strong targets for reusable packaging and recycling systems.</div>
+      </a>
+    </div>
+
+    <div class="table">
+      <a href="https://www.scmp.com/week-asia/health-environment/article/3311415/bali-bans-small-plastic-bottles-tackle-waste-crisis-and-microplastics-urgent-matter">
+        <img src="https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/canvas/2025/05/22/b2add047-b641-4500-b237-56aba285f887_fe570772.jpg?itok=OdfI5rym&v=1747914844" alt="Bali Plastic Ban">
+        <div class="table-title">Bali Bans Small Plastic Bottles</div>
+        <div class="table-desc">Bali banned the sale of plastic water bottles under one liter to combat pollution and microplastic waste on the island.</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

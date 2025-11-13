@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Mission | BotHub</title>
+
+<style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+
+
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+  }
+
+  .image-section {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+  }
+
+  .quote-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  }
+
+  .join-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .join-btn:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <img src="gallery/logo.jpg" width="50" height="50">
+    <h2>BotHub</h2>
+    <nav>
+      <a href="Mainpage.html">Home</a>
+      <a href="bottletypes.html">Bottle Types</a>
+      <a href="brands.html">Bottle Brands</a>
+      <a href="ourmission.html">Our Mission</a>
+      <a href="industry.html">Industry Insights</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+    <a class="signup-btn" href="register.html">Register</a>
+  </header>
+
+  <h1>Join Our Latest Event</h1>
+
+  <div class="image-section">
+    <img src="https://img.freepik.com/premium-photo/group-people-working-together-field-complete-task-earth-day_1111059-3211.jpg" alt="Sustainable bottles background">
+    <div class="quote-text">
+      <p>Save the Trees 2.0: Replant Them</p>
+      <a href="register.html" class="join-btn">Join Us Now</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | BotHub</title>
+<style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    header {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 2px solid whitesmoke;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h2 {
+      margin: 0 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 12px;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: whitesmoke;
+      transform: 0.3s ease;
+    }
+
+    .signup-btn {
+      background-color: lightblue;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background-color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-basis: 100%;
+      }
+
+      .signup-btn {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+
+  .page-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 70px);
+    padding-top: 70px;
+    background-color: white;
+  }
+
+  /* ===== Form Container ===== */
+  .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px gray;
+    width: 300px;
+  }
+
+  h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    color: darkgray;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .submit-btn:hover {
+    background-color: darkblue;
+  }
+
+  footer {
+    background: white;
+    border-top: 2px solid white;
+    padding: 20px 0;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    background: white;
+  }
+
+  .contact-row span {
+    color: blue;
+    cursor: pointer;
+  }
+
+  .contact-row span:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <header>
+      <img src="gallery/logo.jpg" width="50" height="50">
+      <h2>BotHub</h2>
+    <nav>
+      <a href="Mainpage.html">Home</a>
+      <a href="brands.html">Bottle Types</a>
+      <a href="bottletypes.html">Bottle Brands</a>
+      <a href="ourmission.html">Our Mission</a>
+      <a href="industry.html">Industry Insights</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+    <a class="signup-btn" href="register.html">Register</a>
+  </header>
+
+  <div class="page-center">
+    <div class="form-container">
+      <h2>Ask Us Anything</h2>
+      <form action="submit_details.php" method="POST">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label>Your Question</label>
+          <textarea placeholder="Type your question..." rows="5"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="contact-row">
+      <span>Email: support@bothub.com</span>
+      <span>Phone Number: +60 1x-xxx xxxx</span>
+      <span>Instagram</span>
+      <span>Facebook</span>
+    </div>
+  </footer>
+</body>
+</html>
